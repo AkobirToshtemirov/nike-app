@@ -25,6 +25,7 @@ function App() {
 
         <div className="sneakerMain">
           <img className='sneakerPhoto' src={color} alt="" />
+          <img className='symbol' src="/img/symbol.png" alt="" />
         </div>
 
         <div className="footer">
