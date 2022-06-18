@@ -4,11 +4,13 @@ import './App.css';
 function App() {
 
   const [color, setColor] = useState('/img/blue.png');
-
-  const [imgClass, setClass] = useState('sneakerPhoto')
+  const [imgClass, setClass] = useState('sneakerPhoto');
+  const [basketClass, setBasket] = useState('basketBlock')
 
   return (
     <div className="App">
+
+
       <header className="App-header">
         <nav className='nav'>
           <div className="logo">
@@ -16,7 +18,8 @@ function App() {
           </div>
 
           <div className="navBlock">
-            <button className='busket'>
+            <button className='busket'
+             onClick={() => setBasket('onBasket')}>
             <svg width="24px" height="24px" fill="#111" viewBox="0 0 24 24"><path d="M16 7a1 1 0 0 1-1-1V3H9v3a1 1 0 0 1-2 0V3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3a1 1 0 0 1-1 1z"></path><path d="M20 5H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a2 2 0 0 0-2-2zm0 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7h16z"></path></svg>
             </button>
             <button className='humburger'>
@@ -36,7 +39,8 @@ function App() {
               <span className='line'><span className='blackLine'></span></span>
               <div className='btns'>
               <button className='btnCircle blue' onClick={() => {
-                setColor('/img/blue.png')}}> </button>
+                setColor('/img/blue.png');
+                setClass('up')}}> </button>
               <button className='btnCircle black' onClick={() => {
                 setColor('/img/black.png');
                 setClass('down')
@@ -73,6 +77,31 @@ function App() {
           </div>
         </div>
       </header>
+      
+      {/* Basket Block */}
+
+<div className={basketClass}>
+        <div className="basketContent">
+          <button className="closeBtn"
+          onClick={() => setBasket('basketBlock')}>
+            <img src='/img/close .png' alt="" />
+          </button>
+          <div className="imgName">
+            <img src="" alt="" />
+            <div className="nameCost">
+                <h3 className='nameOff'>New</h3>
+                <p className="price">New</p>
+              </div>            
+          </div>
+
+          <div className="addClose">
+            <button className='ok'>OK</button>
+            <button className='delete'>DELETE</button>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   );
 }
