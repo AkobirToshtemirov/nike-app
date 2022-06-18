@@ -166,7 +166,16 @@ button {
 
 }
 
-.click {
-  transform: translate(-30deg);
-  transition: ease;
+.down {
+  transform: translateY(15px) rotate(-25deg);
+  transition: 0.5s ease;
+  position: relative;
+  z-index: 50;
+}
+
+.up {
+  transform: translateY(-15px) rotate(-25deg);
+  transition: 0.5s ease;
+  position: relative;
+  z-index: 50;
 }

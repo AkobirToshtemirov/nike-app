@@ -1,9 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
 function App() {
 
   const [color, setColor] = useState('/img/blue.png');
+
+  const [imgClass, setClass] = useState('sneakerPhoto')
 
   return (
     <div className="App">
@@ -24,7 +26,7 @@ function App() {
         </nav>
 
         <div className="sneakerMain">
-          <img className='sneakerPhoto' src={color} alt="" />
+          <img className={imgClass } src={color} alt="" />
           <img className='symbol' src="/img/symbol.png" alt="" />
         </div>
 
@@ -33,10 +35,19 @@ function App() {
             <div>
               <span className='line'><span className='blackLine'></span></span>
               <div className='btns'>
-              <button className='btnCircle blue' onClick={() => setColor('/img/blue.png')}></button>
-              <button className='btnCircle black' onClick={() => setColor('/img/black.png')}></button>
-              <button className='btnCircle white' onClick={() => setColor('/img/white.png')}></button>
-              <button className='btnCircle green' onClick={() => setColor('/img/green.png')}></button>
+              <button className='btnCircle blue' onClick={() => {
+                setColor('/img/blue.png')}}> </button>
+              <button className='btnCircle black' onClick={() => {
+                setColor('/img/black.png');
+                setClass('down')
+              }}></button>
+              <button className='btnCircle white' onClick={() => {
+                setColor('/img/white.png');
+                setClass('up')}}></button>
+              <button className='btnCircle green' onClick={() => {
+                setColor('/img/green.png');
+                setClass('down')
+              }}></button>
               </div>
             </div>
             <div>
