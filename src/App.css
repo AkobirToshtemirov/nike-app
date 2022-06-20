@@ -219,6 +219,9 @@ button {
   background-color: #fff;
   border-radius: 15px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .closeBtn{
@@ -335,4 +338,87 @@ button {
 
 .delete {
   background-color: red;
+}
+
+.menuMain {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.541);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+.onMenuMain {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.541);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 100;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s ease;
+}
+
+.menuBlock {
+  width: 450px;
+  height: 100%;
+  background-color: #fff;
+  position: relative;
+  transform: translateX(100%);
+  transition: 0.5s ease;
+}
+
+.menuBlockAnim {
+  width: 450px;
+  height: 100%;
+  background-color: #fff;
+  position: relative;
+  transform: translateX(0%);
+  transition: 0.5s ease;
+  
+}
+
+.closeBtnMenu {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.navBlockMenu {
+  margin-top: 70px;
+}
+
+.navBlockMenu ul {
+  list-style: none;
+}
+.navBlockMenu ul li {
+  display: flex;
+  margin: 5px 0; 
+}
+
+.navBlockMenu ul li a {
+  width: 100%;
+  text-decoration: none;
+  text-align: left;
+  color: #333;
+  font-size: 20px;
+  padding: 5px 40px;
+  font-weight: 600;
+}
+
+.navBlockMenu ul li a:hover {
+  color: rgb(0, 57, 171);
 }
