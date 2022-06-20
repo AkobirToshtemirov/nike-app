@@ -72,7 +72,11 @@ function App() {
           <div>
           <h2>Mix n Match</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum beatae saepe quae veniam perspiciatis?</p>
-          <button className="buyBtn">BUY NOW</button>
+          <button 
+          onClick={() => {
+            
+          }}
+          className="buyBtn">BUY NOW</button>
           </div>
           </div>
         </div>
@@ -87,10 +91,10 @@ function App() {
             <img src='/img/close .png' alt="" />
           </button>
           <div className="imgName">
-            <img src="" alt="" />
+            <img className='basketSneaker' src={color} alt="" />
             <div className="nameCost">
-                <h3 className='nameOff'>New</h3>
-                <p className="price">New</p>
+                <h3 className='nameOff'>Mix n Match</h3>
+                <p className="price">$299.00</p>
               </div>            
           </div>
 
