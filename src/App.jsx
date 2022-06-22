@@ -144,7 +144,7 @@ function App() {
             </div>
 
             <div className="addClose">
-              <button className="ok">OK</button>
+              <button onClick={() => setBasket("basketBlock")} className="ok">OK</button>
               <button  onClick={() => setBuy(false)} className="delete">DELETE</button>
             </div>
           </div> : <h2>Nothing has been bought</h2>}
@@ -153,8 +153,11 @@ function App() {
 
       {/* Menu Block */}
 
-      <div className={menuClass}>
-        <div className={menuNext}>
+      <div onClick={() => {
+             setMenu("menuMain");
+             animMenu('menuBlock')
+          }} className={menuClass}>
+        <div onClick={(e) => e.stopPropagation()} className={menuNext}>
           <button className="closeBtnMenu" onClick={() => {
              setMenu("menuMain");
              animMenu('menuBlock')
