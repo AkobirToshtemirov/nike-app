@@ -166,10 +166,10 @@ function App() {
           </button>
           <div className="navBlockMenu">
             <ul>
-              <li><a href="">ABOUT</a></li>
-              <li><a href="">PRODUCTS</a></li>
-              <li><a href="">SERVICES</a></li>
-              <li><a href="">CONTACT</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">PRODUCTS</a></li>
+              <li><a href="#">SERVICES</a></li>
+              <li><a href="#">CONTACT</a></li>
             </ul>
           </div>
 
