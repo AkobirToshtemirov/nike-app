@@ -47,8 +47,10 @@ function App() {
         </nav>
 
         <div className="sneakerMain">
-          <img className={imgClass} src={color} alt="" />
-          <img className="symbol" src="/img/symbol.png" alt="" />
+              <div className="imgMain">
+              <img className={imgClass} src={color} alt="" />
+              <img className="symbol" src="/img/symbol.png" alt="" />
+              </div>
         </div>
 
         <div className="footer">

@@ -148,6 +148,9 @@ button {
 .sneakerMain {
   position: relative;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sneakerMain .sneakerPhoto {
@@ -158,10 +161,15 @@ button {
   position: relative;
 }
 
+.imgMain {
+  width: fit-content;
+  position: relative;
+}
+
 .symbol {
-  position: fixed;
-  top: 30%;
-  left: 25%;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 5;
 
 }
@@ -419,4 +427,125 @@ button {
 .navBlockMenu ul li:hover {
   color: rgb(0, 57, 171);
   cursor: pointer;
+}
+
+@media screen and (max-width:1220px) {
+  .info {
+    padding: 0;
+  }
+
+  .buyBlock {
+    padding-right: 0;
+  }
+
+  .sneakerPhoto, .up, .down {
+    width: 550px;
+  }
+
+  .symbol {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+
+  .info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .info div {
+    width: 300px;
+    margin: 30px 10px 0 10px;
+  }
+
+  .buyBlock {
+    margin-top: 50px;
+    width: 350px;
+  }
+
+  .sneakerPhoto, .up, .down {
+    width: 350px;
+  }
+
+  .symbol {
+    width: 400px;
+  }
+
+  .humburger {
+    margin-right: 0 !important;
+  }
+
+  .basketContent {
+    width: 550px;
+    height: 420px;
+  }
+
+  .menuBlockAnim, .menuBlock {
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width:740px) {
+
+  .sneakerMain {
+    margin-top: 50px;
+  }
+
+  .footer {
+    align-items: center;
+  }
+
+  .info {
+    justify-content: center;
+  }
+
+  .info div {   
+    width: 350px;
+  }
+
+  .basketContent {
+    width: 500px;
+    height: 350px;
+  }
+
+  .basketSneaker {
+    width: 250px;
+  }
+
+  .nameOff {
+    font-size: 20px;
+  }
+
+  .addClose button {
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+
+  .imgName {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .nav {
+    padding: 15px 20px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .basketContent {
+    width: 90%;
+  }
 }
