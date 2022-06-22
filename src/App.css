@@ -549,3 +549,24 @@ button {
     width: 90%;
   }
 }
+
+@media screen and (max-width:450px) {
+  .symbol {
+    width: 350px;
+  }
+
+  .info div {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .buyBlock {
+    width: 100%;
+  }
+
+  .navBlock button {
+    padding: 0;
+  }
+}
+
