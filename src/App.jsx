@@ -119,7 +119,8 @@ function App() {
               <h2>Mix n Match</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                laborum beatae saepe quae veniam perspiciatis?
+                laborum beatae saepe quae veniam perspiciatis? 
+                created by <i>Akobir Toshtemirov</i>
               </p>
               <button onClick={() => setBuy(true)} className="buyBtn">
                 BUY NOW
@@ -183,5 +184,7 @@ function App() {
     </div>
   );
 }
+
+//created by Akobir Toshtemirov
 
 export default App;
